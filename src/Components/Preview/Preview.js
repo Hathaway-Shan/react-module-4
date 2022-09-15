@@ -10,9 +10,8 @@ export default function Preview({ head }) {
 
   return (
     //add style properties to the div as objects
-    <div>
-      <h3>{head}</h3>
-      {/* <img src="../../../public/pictures/bird-head.png"></img> */}
+    <div className="preview">
+      <img src={`${process.env.PUBLIC_URL}/pictures/${head}-head.png`} />
       <h3>Body</h3>
       <h3>Feet</h3>
     </div>

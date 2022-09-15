@@ -1,6 +1,11 @@
 .preview {
   grid-area: preview;
-  height: 80%;
-  width: 100%;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview img {
+  max-width: 80px;
 }
