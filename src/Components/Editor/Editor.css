@@ -10,10 +10,6 @@
   align-content: center;
 }
 
-label {
-  align-items: center;
-}
-
 input[type='text'],
 select,
 textarea {
