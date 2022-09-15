@@ -7,13 +7,14 @@ import './Main.css';
 
 export default function Main() {
   // add useState calls here for top, middle, feet, and slogans
-  const [head, setHead] = useState('');
+  const [head, setHead] = useState('bird');
+  const [body, setBody] = useState('blue');
 
   return (
     <main>
       {/* pass the state variables as props to the presentational components */}
-      <Preview head={head} />
-      <Editor head={head} setHead={setHead} />
+      <Preview head={head} body={body} />
+      <Editor head={head} setHead={setHead} body={body} setBody={setBody} />
     </main>
   );
 }
