@@ -1,0 +1,8 @@
+main {
+  display: grid;
+  margin: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'editor preview';
+  grid-gap: 20px;
+  height: calc(100vh - 80px);
+}
