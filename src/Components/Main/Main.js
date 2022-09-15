@@ -9,12 +9,20 @@ export default function Main() {
   // add useState calls here for top, middle, feet, and slogans
   const [head, setHead] = useState('bird');
   const [body, setBody] = useState('blue');
+  const [feet, setFeet] = useState('blue');
 
   return (
     <main>
       {/* pass the state variables as props to the presentational components */}
-      <Preview head={head} body={body} />
-      <Editor head={head} setHead={setHead} body={body} setBody={setBody} />
+      <Preview head={head} body={body} feet={feet} />
+      <Editor
+        head={head}
+        setHead={setHead}
+        body={body}
+        setBody={setBody}
+        feet={feet}
+        setFeet={setFeet}
+      />
     </main>
   );
 }
