@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Preview.css';
 
-export default function Preview({ title, subTitle, blogBody, textAlign, font }) {
+export default function Preview({ head }) {
   // implement a Preview screen here
   //  Note - the HTML should have the following structure
   //  the main div should have a class of preview and the font-name prop
@@ -11,7 +11,8 @@ export default function Preview({ title, subTitle, blogBody, textAlign, font }) 
   return (
     //add style properties to the div as objects
     <div>
-      <h3>Head</h3>
+      <h3>{head}</h3>
+      {/* <img src="../../../public/pictures/bird-head.png"></img> */}
       <h3>Body</h3>
       <h3>Feet</h3>
     </div>

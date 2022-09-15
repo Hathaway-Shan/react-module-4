@@ -2,12 +2,12 @@ import React from 'react';
 
 import './Editor.css';
 
-export default function Editor({ setTitle, setSubTitle, setBlogBody, setTextAlign, setFont }) {
+export default function Editor({ setHead, setSloganBody }) {
   return (
     <div className="editor">
       <div className="form-control">
         <label className="label">Head</label>
-        <select onChange={(e) => setFont(e.target.value)}>
+        <select onChange={(e) => setHead(e.target.value)}>
           <option value="bird">{'Bird'}</option>
           <option value="dog">Dog</option>
           <option value="duck">Duck</option>
@@ -16,7 +16,7 @@ export default function Editor({ setTitle, setSubTitle, setBlogBody, setTextAlig
       </div>
       <div className="form-control">
         <label className="label">Middle</label>
-        <select onChange={(e) => setFont(e.target.value)}>
+        <select onChange={(e) => setHead(e.target.value)}>
           <option value="blue">{'Blue'}</option>
           <option value="dress">Dress</option>
           <option value="pink">Pink</option>
@@ -25,7 +25,7 @@ export default function Editor({ setTitle, setSubTitle, setBlogBody, setTextAlig
       </div>
       <div className="form-control">
         <label className="label">Feet</label>
-        <select onChange={(e) => setFont(e.target.value)}>
+        <select onChange={(e) => setHead(e.target.value)}>
           <option value="blue">{'Blue'}</option>
           <option value="dog">Dog</option>
           <option value="leg">Leg</option>
@@ -39,7 +39,7 @@ export default function Editor({ setTitle, setSubTitle, setBlogBody, setTextAlig
           name="blogBody"
           type="text"
           style={{ height: '250px' }}
-          onChange={(e) => setBlogBody(e.target.value)}
+          onChange={(e) => setSloganBody(e.target.value)}
         />
       </div>
     </div>
