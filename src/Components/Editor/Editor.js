@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Editor.css';
 
-export default function Editor({ setHead, setBody, setFeet, setSloganBody }) {
+export default function Editor({ setHead, setBody, setFeet }) {
   return (
     <div className="editor">
       <div className="form-control">
@@ -31,16 +31,6 @@ export default function Editor({ setHead, setBody, setFeet, setSloganBody }) {
           <option value="leg">Leg</option>
           <option value="white">White</option>
         </select>
-      </div>
-
-      <div className="form-control">
-        <label className="label">Slogans</label>
-        <textarea
-          name="blogBody"
-          type="text"
-          style={{ height: '250px' }}
-          onChange={(e) => setSloganBody(e.target.value)}
-        />
       </div>
     </div>
   );
