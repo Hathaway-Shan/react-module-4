@@ -13,13 +13,24 @@ export default function Main() {
   const [body, setBody] = useState('blue');
   const [feet, setFeet] = useState('blue');
   const [slogan, setSlogan] = useState([]);
+  const [headChanges, setHeadChanges] = useState(0);
+  const [middleChanges, setMiddleChanges] = useState(0);
+  const [feetChanges, setFeetChanges] = useState(0);
 
   return (
     <main>
       {/* pass the state variables as props to the presentational components */}
       <div>
         <Preview head={head} body={body} feet={feet} slogan={slogan} />
-        <Stats slogan={slogan} />
+        <Stats
+          slogan={slogan}
+          headChanges={headChanges}
+          middleChanges={middleChanges}
+          feetChanges={feetChanges}
+          setHeadChanges={setHeadChanges}
+          setMiddleChanges={setMiddleChanges}
+          setFeetChanges={setFeetChanges}
+        />
       </div>
 
       <div>
@@ -30,6 +41,9 @@ export default function Main() {
           setBody={setBody}
           feet={feet}
           setFeet={setFeet}
+          setHeadChanges={setHeadChanges}
+          setMiddleChanges={setMiddleChanges}
+          setFeetChanges={setFeetChanges}
         />
         <Catchphrase setSlogan={setSlogan} />
       </div>
